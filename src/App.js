@@ -5,6 +5,10 @@ import { bodyParts, equipmentsList } from './Credentials';
 
 const App = () => {
 
+  useEffect ( () => {
+    document.title = "findyourworkouts";
+  }, [])
+
   const bodyPart = useRef(null);
   const [ bodyparts, setBodyParts ] = useState(bodyParts);
   const [ equipments, setEquipments ] = useState(equipmentsList)
